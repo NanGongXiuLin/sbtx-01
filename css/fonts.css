@@ -1,0 +1,38 @@
+/* css/fonts.css
+   把字体文件放到项目根目录的 tols/ 下（例如: tols/MyFont-Regular.woff2）
+   然后根据实际文件名修改下面的 src 路径。
+*/
+
+@font-face {
+  font-family: 'FZLanTingYuan';
+  src: url('../tols/方正兰亭圆-逐梦星辰.woff2') format('woff2'),
+       url('../tols/方正兰亭圆-逐梦星辰.woff') format('woff'),
+       url('../tols/方正兰亭圆-逐梦星辰.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --site-font: 'FZLanTingYuan', 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', Roboto, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+}
+
+body {
+  font-family: var(--site-font) !important;
+}
+
+/* 如需对特定元素使用不同字体可在此添加规则，例如：
+.name-kanji { font-family: 'SiteSans', serif; }
+*/
+
+/* 兼容现有 CSS 中使用的字体别名 */
+@font-face {
+  font-family: 'FZLantingYuan-ZMCX';
+  src: url('../tols/方正兰亭圆-逐梦星辰.woff2') format('woff2'),
+       url('../tols/方正兰亭圆-逐梦星辰.woff') format('woff'),
+       url('../tols/方正兰亭圆-逐梦星辰.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
