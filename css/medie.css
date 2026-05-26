@@ -1,0 +1,44 @@
+/* ===== 自定义播放按钮样式 ===== */
+        .play-btn {
+            margin-top: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 24px;
+            outline: none;
+        }
+        
+        .play-btn:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: scale(1.1);
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .play-btn:active {
+            transform: scale(0.95);
+        }
+        
+        /* 播放/暂停图标 */
+        .play-btn::before {
+            content: "▶";
+            margin-left: 4px; /* 微调三角形位置 */
+        }
+        
+        .play-btn.playing::before {
+            content: "⏸";
+            margin-left: 0;
+        }
+        
+        /* 隐藏 audio 元素 */
+        audio {
+            display: none;
+        }

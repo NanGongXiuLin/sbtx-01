@@ -1,0 +1,59 @@
+/* 新增底部卡片区域的样式 */
+        .cards-section {
+            margin-top: 48px;
+            padding: 16px 0;
+            border-top: 1px solid #EF8472; /* 可选：添加一条分隔线 */
+        }
+        .cards-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        .cards-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 100px;
+            background-color: #EF8472;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+        .card:active {
+            transform: translateY(0);
+        }
+        .card-icon {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .card-text {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        /* 为了让布局更紧凑，调整一下原有间距 */
+        .play-btn {
+            margin-bottom: 20px;
+        }
+        name {
+            display: block;
+            margin: 20px 0;
+        }
+        h2, h4 {
+            margin: 10px 0;
+        }

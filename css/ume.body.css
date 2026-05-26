@@ -1,0 +1,51 @@
+@font-face {
+        font-family: 'FZLanTingYuan';
+        src: url('./../tols/方正兰亭圆-逐梦星辰.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+body {
+        position: relative;
+        overflow: auto; /* 允许页面滚动 */
+        display: flex;              /* 开启弹性布局 */
+        flex-direction: column;     /* 纵向排列 */
+        align-items: center;        /* 水平居中 */
+        justify-content: flex-start; /* 从顶部开始排列 */
+        min-height: 100vh;
+        margin: 0;                 /* 去除默认外边距 */
+        font-family: 'FZLanTingYuan', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-family: 'FZLantingYuan-ZMCX', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+
+body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background-image: url('./../ico/b/img_general_csprt-2-0000_full_waifu2x_2560x1440_-1n_png.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        filter: blur(12px);
+        transform: scale(1.05);
+        }
+
+img {
+      margin-top: 3vh;           /* 距离顶部 15% 的视口高度 */
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;         /* 圆形头像 */
+        }
+embed {
+        margin-top: 30px;           /* 音频与图片的间距 */
+        width: 300px;
+        height: 32px;
+        border: none;              /* 去除边框 */
+        }
+
+p {
+    margin-left: 26px;
+    margin-right: 26px;
+        }
